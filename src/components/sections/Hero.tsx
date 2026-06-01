@@ -10,7 +10,7 @@ export function Hero() {
   );
 
   return (
-    <section id="topo" className="relative isolate overflow-hidden py-24 md:py-32">
+    <section id="topo" className="relative isolate scroll-mt-24 overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,#011b7c_0%,transparent_35%),radial-gradient(circle_at_bottom_right,#fe701a_0%,transparent_25%)] opacity-60" />
       <Container className="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
         <div>

@@ -22,7 +22,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="processo" className="bg-[#011b7c]/30 py-24">
+    <section id="processo" className="scroll-mt-24 bg-[#011b7c]/30 py-24">
       <Container>
         <SectionTitle
           eyebrow="Processo"
