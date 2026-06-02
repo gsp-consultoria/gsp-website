@@ -62,15 +62,11 @@ Variáveis previstas:
 | `VITE_COMPANY_NAME` | Sim | Nome comercial exibido na landing page. Valor padrão sugerido: `GSP Consultoria`. |
 | `VITE_CONTACT_EMAIL` | Sim | E-mail principal de contato comercial. |
 | `VITE_WHATSAPP_NUMBER` | Sim | Número de WhatsApp no formato internacional, sem espaços. |
-| `VITE_SITE_URL` | Não | URL pública da landing page em produção. |
-| `VITE_ANALYTICS_ID` | Não | ID de ferramenta de analytics, caso seja adotada. |
 
 Informações pendentes para finalizar o README:
 
 - URL oficial de produção.
-- Plataforma final de deploy.
-- Confirmação se haverá analytics.
-- Confirmação se o formulário enviará mensagem por WhatsApp, e-mail, API própria ou serviço externo.
+- Domínio oficial que será apontado via Cloudflare.
 
 ## Arquitetura
 
@@ -146,17 +142,41 @@ Critérios mínimos:
 
 ## Deploy
 
-Estratégia recomendada inicialmente:
+Estratégia escolhida:
 
-- Deploy estático via **Vercel**, **Netlify**, **Azure Static Web Apps** ou **GitHub Pages**.
+- Build e hospedagem estática na **Vercel**.
+- **Cloudflare** para DNS/domínio e, se desejado, proxy/CDN na frente do domínio.
 - Pipeline de CI no GitHub Actions executando `lint`, `test` e `build` antes do merge.
-- Ambiente de preview por Pull Request, caso a plataforma escolhida suporte.
+- Ambiente de preview por Pull Request via Vercel.
+
+Configuração da Vercel:
+
+| Campo | Valor |
+|---|---|
+| Framework Preset | Vite |
+| Install Command | `npm ci` |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
+
+Variáveis de ambiente para configurar na Vercel:
+
+| Variável | Descrição |
+|---|---|
+| `VITE_COMPANY_NAME` | Nome comercial exibido na landing page. |
+| `VITE_CONTACT_EMAIL` | E-mail principal de contato comercial. |
+| `VITE_WHATSAPP_NUMBER` | Número de WhatsApp no formato internacional, sem espaços. |
+
+Configuração da Cloudflare:
+
+1. Adicione o domínio na Vercel e siga as instruções exibidas para o domínio escolhido.
+2. Na Cloudflare, crie ou ajuste os registros DNS apontando para a Vercel conforme as instruções da Vercel.
+3. Após validar o domínio na Vercel, mantenha SSL/TLS ativo na Cloudflare.
+4. Não adicione tokens, chaves de API ou segredos da Cloudflare ao repositório.
 
 Pendente de decisão:
 
-- Plataforma final de hospedagem.
 - Domínio oficial.
-- Estratégia de formulário de contato.
+- Uso ou não do proxy da Cloudflare para o domínio final.
 
 ## Responsáveis
 

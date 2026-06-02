@@ -3,7 +3,7 @@ import { SectionTitle } from '../ui/SectionTitle';
 
 export function About() {
   return (
-    <section id="sobre" className="py-24">
+    <section id="sobre" className="scroll-mt-24 py-24">
       <Container className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
         <SectionTitle
           eyebrow="Sobre"

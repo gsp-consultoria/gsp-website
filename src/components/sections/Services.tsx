@@ -5,7 +5,7 @@ import { SectionTitle } from '../ui/SectionTitle';
 
 export function Services() {
   return (
-    <section id="servicos" className="py-24">
+    <section id="servicos" className="scroll-mt-24 py-24">
       <Container>
         <SectionTitle
           eyebrow="Serviços"

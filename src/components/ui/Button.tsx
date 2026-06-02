@@ -38,7 +38,19 @@ type ButtonLinkProps = PropsWithChildren<
   }
 >;
 
-export function ButtonLink({ children, className, variant = 'primary', ...props }: ButtonLinkProps) {
+export function ButtonLink({
+  children,
+  className,
+  rel,
+  target,
+  variant = 'primary',
+  ...props
+}: ButtonLinkProps) {
+  const safeRel =
+    target === '_blank'
+      ? Array.from(new Set([...(rel?.split(/\s+/).filter(Boolean) ?? []), 'noopener'])).join(' ')
+      : rel;
+
   return (
     <a
       className={cn(
@@ -46,6 +58,8 @@ export function ButtonLink({ children, className, variant = 'primary', ...props 
         variants[variant],
         className,
       )}
+      rel={safeRel}
+      target={target}
       {...props}
     >
       {children}

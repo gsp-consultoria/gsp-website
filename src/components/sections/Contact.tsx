@@ -10,7 +10,7 @@ export function Contact() {
   );
 
   return (
-    <section id="contato" className="py-24">
+    <section id="contato" className="scroll-mt-24 py-24">
       <Container>
         <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[#011b7c] p-8 md:p-12">
           <div className="max-w-3xl">
