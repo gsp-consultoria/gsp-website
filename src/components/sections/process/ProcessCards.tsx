@@ -30,8 +30,8 @@ export function ProcessCard({
         amount: 0.5,
       }}
       transition={{
-        duration: 1.1,
-        delay: index * 1.2,
+        duration: 1,
+        delay: index * 1,
       }}
       className="relative z-50"
     >

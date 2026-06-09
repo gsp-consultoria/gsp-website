@@ -10,7 +10,7 @@ export function ProcessTimeline() {
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
         transition={{
-          duration: 5,
+          duration: 4,
           ease: "easeInOut",
         }}
         className="
