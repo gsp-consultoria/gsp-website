@@ -36,9 +36,7 @@ export function Services() {
   return (
     <section className="bg-[#020618] py-24 text-white" id="servicos">
       <div className="container mx-auto px-6">
-        <span className="mb-8 block text-sm font-bold uppercase tracking-wider text-zinc-300">
-          Serviços
-        </span>
+        
 
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-4xl font-bold md:text-5xl">

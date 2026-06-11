@@ -19,9 +19,7 @@ export function Contact() {
       <div className="absolute bottom-0 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-[#0A2DB8]/30 blur-[140px]" />
 
       <div className="container relative z-10 mx-auto px-6">
-        <span className="mb-8 block text-sm font-bold uppercase tracking-widest text-zinc-300">
-          CONTATO
-        </span>
+       
 
         <div
           className="

@@ -16,9 +16,7 @@ export function About() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(143,66,25,0.12),transparent_35%)]" />
 
       <div className="container relative z-10 mx-auto px-6">
-        <span className="mb-8 block text-sm font-bold uppercase tracking-widest text-zinc-300">
-          SOBRE
-        </span>
+        
 
         <div className="grid items-center gap-16 lg:grid-cols-2">
       

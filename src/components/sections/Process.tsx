@@ -37,9 +37,7 @@ export function Process() {
       className="relative overflow-hidden bg-[#020618] py-32"
     >
       <div className="container mx-auto px-6">
-        <span className="mb-8 block text-sm font-bold uppercase tracking-widest text-zinc-300">
-          PROCESSO
-        </span>
+       
 
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-4xl font-bold text-white md:text-5xl">
