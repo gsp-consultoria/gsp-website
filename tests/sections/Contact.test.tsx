@@ -11,7 +11,7 @@ describe('Contact', () => {
     expect(whatsappLink).toHaveAttribute('href', expect.stringContaining('https://wa.me/5513991910139'));
     expect(whatsappLink).toHaveAttribute(
       'href',
-      expect.stringContaining('Quero%20solicitar%20um%20diagn%C3%B3stico'),
+      expect.stringContaining('Quero%20conversar%20sobre%20um%20projeto'),
     );
     expect(emailLink).toHaveAttribute('href', 'mailto:gabriel_souza33@hotmail.com');
   });

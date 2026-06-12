@@ -30,7 +30,6 @@ export function Header() {
           </span>
         </a>
 
-        {/* Desktop */}
         <nav
           className="hidden items-center gap-8 md:flex"
           aria-label="Navegação principal"
@@ -50,7 +49,6 @@ export function Header() {
           Fale conosco
         </ButtonLink>
 
-        {/* Mobile Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="rounded-lg p-2 text-white md:hidden"
@@ -60,7 +58,6 @@ export function Header() {
         </button>
       </Container>
 
-      {/* Mobile Menu */}
       <div
         className={`overflow-hidden border-t border-white/10 bg-slate-950 transition-all duration-300 md:hidden ${
           isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
