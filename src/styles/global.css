@@ -24,3 +24,21 @@ body {
   background: var(--color-brand-orange);
   color: #ffffff;
 }
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  width: max-content;
+  display: flex;
+  align-items: center;
+
+  animation: marquee 22s linear infinite;
+}

@@ -1,46 +1,69 @@
-import { Container } from '../ui/Container';
-import { SectionTitle } from '../ui/SectionTitle';
+"use client";
+
+import { ProcessCard } from "./process/ProcessCards";
+import { ProcessTimeline } from "./process/ProcessTimeLine";
 
 const steps = [
   {
-    title: 'Diagnóstico',
-    description: 'Entendimento do negócio, dores, processos atuais e objetivos de evolução.',
+    number: "1",
+    title: "Diagnóstico",
+    description:
+      "Entendimento do negócio, dores, processos atuais e objetivos de evolução.",
   },
   {
-    title: 'Planejamento',
-    description: 'Definição de escopo, prioridades, arquitetura, riscos e plano incremental de entrega.',
+    number: "2",
+    title: "Planejamento",
+    description:
+      "Definição de escopo, prioridades, arquitetura, riscos e plano incremental de entrega.",
   },
   {
-    title: 'Construção',
-    description: 'Desenvolvimento com qualidade, componentização, testes e validações frequentes.',
+    number: "3",
+    title: "Construção",
+    description:
+      "Desenvolvimento com qualidade, componentização, testes e validações frequentes.",
   },
   {
-    title: 'Entrega e evolução',
-    description: 'Deploy, acompanhamento, ajustes, melhorias e evolução contínua da solução.',
+    number: "4",
+    title: "Entrega e evolução",
+    description:
+      "Deploy, acompanhamento, ajustes, melhorias e evolução contínua da solução.",
   },
 ];
 
 export function Process() {
   return (
-    <section id="processo" className="scroll-mt-24 bg-[#011b7c]/30 py-24">
-      <Container>
-        <SectionTitle
-          eyebrow="Processo"
-          title="Um caminho claro do problema à solução"
-          description="Trabalho guiado por clareza, comunicação objetiva e entregas incrementais para reduzir risco e gerar valor cedo."
-        />
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {steps.map((step, index) => (
-            <div key={step.title} className="rounded-3xl border border-white/10 bg-slate-950/60 p-6">
-              <span className="grid size-12 place-items-center rounded-2xl bg-[#fe701a] text-lg font-black text-white">
-                {index + 1}
-              </span>
-              <h3 className="mt-6 text-xl font-bold text-white">{step.title}</h3>
-              <p className="mt-4 text-sm leading-7 text-slate-300">{step.description}</p>
-            </div>
-          ))}
+    <section
+      id="processo"
+      className="relative overflow-hidden bg-[#020618] py-32"
+    >
+      <div className="container mx-auto px-6">
+       
+
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl font-bold text-white md:text-5xl">
+            Um caminho claro do problema à solução
+          </h2>
+
+          <p className="mt-5 text-lg text-zinc-400">
+            Trabalho guiado por clareza, comunicação objetiva e
+            entregas incrementais para reduzir risco e gerar valor.
+          </p>
         </div>
-      </Container>
+
+        <div className="relative mt-24">
+          <ProcessTimeline />
+
+          <div className="grid gap-8 lg:grid-cols-4">
+            {steps.map((step, index) => (
+              <ProcessCard
+                key={step.number}
+                {...step}
+                index={index}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

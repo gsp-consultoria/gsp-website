@@ -14,29 +14,33 @@
     "validate": "npm run lint && npm run test && npm run build"
   },
   "dependencies": {
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^1.17.0",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-icons": "^5.6.0",
+    "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
     "@eslint/js": "latest",
+    "@tailwindcss/vite": "latest",
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
     "@testing-library/user-event": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "@vitest/ui": "latest",
     "eslint": "latest",
     "eslint-plugin-react-hooks": "latest",
     "eslint-plugin-react-refresh": "latest",
     "globals": "latest",
     "jsdom": "latest",
+    "tailwindcss": "latest",
     "typescript": "latest",
     "typescript-eslint": "latest",
-    "vitest": "latest",
-    "@vitest/ui": "latest",
-    "@tailwindcss/vite": "latest",
-    "@vitejs/plugin-react": "latest",
     "vite": "latest",
-    "tailwindcss": "latest"
+    "vitest": "latest"
   }
 }

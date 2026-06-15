@@ -13,7 +13,7 @@ describe('App', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /soluções digitais/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /um caminho claro/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /tecnologia com visão de negócio/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /tecnologia com visão.*negócio/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /stack moderna/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /vamos transformar/i })).toBeInTheDocument();
   });
