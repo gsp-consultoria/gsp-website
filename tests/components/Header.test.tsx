@@ -27,6 +27,8 @@ describe('Header', () => {
       'href',
       '#contato',
     );
-    expect(screen.getByRole('link', { name: 'Fale conosco' })).toHaveAttribute('href', '#contato');
+    expect(
+  screen.getAllByRole('link', { name: 'Fale conosco' })[0]
+).toHaveAttribute('href', '#contato');
   });
 });
