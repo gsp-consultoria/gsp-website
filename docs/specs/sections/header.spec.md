@@ -2,23 +2,36 @@
 
 ## Objetivo
 
-Permitir navegação rápida e reforçar a marca desde o primeiro contato.
+Permitir navegacao rapida e reforcar a marca desde o primeiro contato.
 
-## Conteúdo
+## Conteudo
 
-- Logo textual: GSP Consultoria.
-- Símbolo: `>_`.
-- Links: Serviços, Processo, Sobre, Tecnologias, Contato.
+- Logo em imagem (`gsp_logo.png`).
+- Nome da marca: GSP Consultoria.
+- Links: Servicos, Processo, Sobre, Tecnologias, Contato.
 - CTA: Fale conosco.
+- Botao de menu mobile com icones de abrir e fechar.
 
 ## Comportamento
 
-- Deve ficar visível no topo durante rolagem.
-- Deve usar `header` e `nav` semânticos.
-- Links devem apontar para âncoras válidas.
+- Deve ficar visivel no topo durante rolagem (`sticky`).
+- Deve usar `header` e `nav` semanticos.
+- A navegacao desktop aparece a partir de `md`.
+- O menu mobile abre e fecha por estado local.
+- Ao clicar em um link no menu mobile, o menu deve fechar.
+- Links devem apontar para ancoras validas.
 
-## Critérios de aceite
+## Acessibilidade
 
-- `nav` possui `aria-label`.
+- Link da marca deve ter `aria-label` para voltar ao topo.
+- Navegacao principal deve ter `aria-label`.
+- Botao mobile deve ter `aria-label`.
+- Foco visivel deve ser preservado nos links.
+
+## Criterios de aceite
+
+- `nav` desktop possui `aria-label`.
 - CTA aponta para `#contato`.
-- Header não cobre conteúdo de forma problemática.
+- Header nao cobre conteudo de forma problematica.
+- Menu mobile contem os mesmos links principais.
+- Logo possui texto alternativo quando usada como marca.
