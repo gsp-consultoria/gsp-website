@@ -2,17 +2,29 @@
 
 ## Objetivo
 
-Encerrar a landing page reforçando marca, slogan e navegação útil sem competir com o CTA principal.
+Encerrar a landing page reforcando marca, proposta e navegacao util sem competir com o CTA principal.
 
 ## Elementos
 
+- Logo em imagem.
 - Nome da empresa.
-- Slogan.
-- Links para seções principais.
+- Texto institucional curto.
+- Links para secoes principais.
+- Copyright com ano atual.
+- Mensagem de desenvolvimento com foco em performance e experiencia do usuario.
 
-## Critérios de aceite
+## Links atuais
+
+- Servicos
+- Tecnologias
+- Processo
+- Contato
+- Sobre
+
+## Criterios de aceite
 
 - Usa elemento `footer`.
-- Links apontam para âncoras válidas.
-- Texto permanece legível em mobile.
-- Não adiciona informações legais ou comerciais não confirmadas.
+- Links apontam para ancoras validas.
+- Texto permanece legivel em mobile.
+- Nao adiciona informacoes legais ou comerciais nao confirmadas.
+- Logo decorativa pode usar `alt=""` quando o nome da marca estiver visivel ao lado.

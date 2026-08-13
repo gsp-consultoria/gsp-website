@@ -1,58 +1,71 @@
 # Acceptance Criteria
 
-## Critérios globais
+## Criterios globais
 
 - A landing page abre sem erro no navegador.
-- O build de produção é gerado com sucesso.
-- A navegação do header leva às seções corretas.
+- O build de producao e gerado com sucesso.
+- A navegacao do header leva as secoes corretas.
 - O Hero comunica claramente o que a empresa faz.
-- O CTA principal leva ao contato.
-- As seções obrigatórias estão presentes.
-- O layout não quebra em mobile.
-- A página possui apenas um `h1`.
+- O CTA principal leva ao WhatsApp com mensagem pre-preenchida.
+- O CTA de e-mail abre `mailto:` com o e-mail configurado.
+- As secoes obrigatorias estao presentes.
+- O menu mobile abre, fecha e preserva os links principais.
+- O layout nao quebra em mobile, tablet ou desktop.
+- A pagina possui apenas um `h1`.
 - Os testes passam.
 - O lint passa.
+- Nao ha textos placeholder visiveis em producao.
 
-## Critérios por seção
+## Criterios por secao
 
 ### Header
 
-- Mostra marca.
-- Mostra navegação.
-- Mostra CTA.
-- Fica legível sobre o conteúdo.
+- Mostra logo em imagem e nome da marca.
+- Mostra navegacao desktop.
+- Mostra CTA para contato.
+- Possui menu mobile com botao acessivel.
+- Fica legivel sobre o conteudo.
 
 ### Hero
 
 - Mostra proposta de valor.
-- Mostra CTA primário e secundário.
-- Visual deve reforçar tecnologia.
+- Mostra CTA primario e secundario.
+- Visual reforca tecnologia e diagnostico tecnico.
+- A animacao nao impede a leitura do conteudo principal.
 
-### Serviços
+### Servicos
 
-- Lista serviços principais.
-- Cada serviço tem título e descrição.
+- Lista servicos principais.
+- Cada servico tem titulo, descricao e icone.
+- Exibe metricas de apoio sem substituir a proposta de valor.
 
 ### Processo
 
 - Explica etapas de trabalho.
-- Deve passar previsibilidade e confiança.
+- Deve passar previsibilidade e confianca.
+- Visual transmite sequencia clara.
 
 ### Sobre
 
 - Explica o posicionamento da GSP Consultoria.
-- Não deve parecer currículo pessoal demais.
+- Nao deve parecer curriculo pessoal demais.
+- Reforca pilares de trabalho e capacidade tecnica.
 
 ### Tecnologias
 
-- Mostra stack e áreas de atuação.
-- Não deve virar lista excessiva de buzzwords.
+- Mostra stack e areas de atuacao.
+- Usa icones reconheciveis.
+- Nao deve virar lista excessiva de buzzwords.
+- Marquee deve pausar no hover.
 
 ### Contato
 
 - CTA claro para WhatsApp e e-mail.
 - Texto convida a iniciar conversa.
+- Links usam valores configuraveis por variaveis `VITE_*`.
 
 ### Footer
 
-- Fecha a página com marca e links úteis.
+- Fecha a pagina com marca e links uteis.
+- Copyright usa ano atual.
+- Links apontam para ancoras validas.
